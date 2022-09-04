@@ -19,7 +19,7 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        VStack(spacing: 0) {
+        VStack() {
             ZStack {
                 switch selectedIndex {
                 case 0:
@@ -46,14 +46,13 @@ struct ContentView: View {
                             .font(.system(size: 25,
                                           weight: .regular,
                                           design: .default))
-                            .foregroundColor(selectedIndex == number ? Color(.label) : Color(UIColor.white))
+                            .foregroundColor(selectedIndex == number ? Color(.label) : Color(UIColor.lightGray))
                             .frame(width: 30, height: 30)
                     })
                     Spacer()
                 }
             }
-            .frame(height: 60)
-            .background(Color.gray)
+            .padding(.top, 10)
         }
     }
 }
