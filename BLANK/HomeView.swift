@@ -6,3 +6,14 @@
 //
 
 import SwiftUI
+
+struct HomeView:  View {
+    var body: some View {
+        NavigationView {
+            ZStack {
+                Text("This is the home screen of the app")
+            }
+            .navigationTitle("Home")
+        }
+    }
+}

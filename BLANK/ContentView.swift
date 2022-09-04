@@ -23,19 +23,15 @@ struct ContentView: View {
             ZStack {
                 switch selectedIndex {
                 case 0:
-                    NavigationView {
-                        VStack() {
-                            Text("First Screen")
-                        }
-                        .navigationTitle("First Screen")
-                    }
+                    HomeView()
+                case 1:
+                    HistoryView()
+                case 2:
+                    CalendarView()
+                case 3:
+                    FriendView()
                 default:
-                    NavigationView {
-                        VStack {
-                            Text("Other")
-                        }
-                        .navigationTitle("Other Screen")
-                    }
+                    TasksView()
                 }
             }
             
