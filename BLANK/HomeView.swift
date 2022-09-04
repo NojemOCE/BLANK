@@ -19,12 +19,12 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             ZStack {
                 switch selectedIndex {
                 case 0:
                     NavigationView {
-                        VStack {
+                        VStack() {
                             Text("First Screen")
                         }
                         .navigationTitle("First Screen")
@@ -39,7 +39,7 @@ struct ContentView: View {
                 }
             }
             
-            Divider().frame(height: 40)
+            Divider()
             HStack {
                 ForEach(0..<5, id: \.self) { number in
                     Spacer()
@@ -50,12 +50,14 @@ struct ContentView: View {
                             .font(.system(size: 25,
                                           weight: .regular,
                                           design: .default))
-                            .foregroundColor(selectedIndex == number ? .black : Color(UIColor.lightGray))
-                            .frame(width: 30, height: 40)
+                            .foregroundColor(selectedIndex == number ? Color(.label) : Color(UIColor.white))
+                            .frame(width: 30, height: 30)
                     })
                     Spacer()
                 }
             }
+            .frame(height: 60)
+            .background(Color.gray)
         }
     }
 }

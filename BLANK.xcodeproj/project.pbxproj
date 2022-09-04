@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		01C1FB6C28C4D0C500951C75 /* BLANKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C1FB6B28C4D0C500951C75 /* BLANKApp.swift */; };
-		01C1FB6E28C4D0C500951C75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C1FB6D28C4D0C500951C75 /* ContentView.swift */; };
+		01C1FB6E28C4D0C500951C75 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C1FB6D28C4D0C500951C75 /* HomeView.swift */; };
 		01C1FB7028C4D0C500951C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C1FB6F28C4D0C500951C75 /* Assets.xcassets */; };
 		01C1FB7328C4D0C500951C75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C1FB7228C4D0C500951C75 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		01C1FB6828C4D0C500951C75 /* BLANK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLANK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C1FB6B28C4D0C500951C75 /* BLANKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLANKApp.swift; sourceTree = "<group>"; };
-		01C1FB6D28C4D0C500951C75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		01C1FB6D28C4D0C500951C75 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		01C1FB6F28C4D0C500951C75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01C1FB7228C4D0C500951C75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				01C1FB6B28C4D0C500951C75 /* BLANKApp.swift */,
-				01C1FB6D28C4D0C500951C75 /* ContentView.swift */,
+				01C1FB6D28C4D0C500951C75 /* HomeView.swift */,
 				01C1FB6F28C4D0C500951C75 /* Assets.xcassets */,
 				01C1FB7128C4D0C500951C75 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01C1FB6E28C4D0C500951C75 /* ContentView.swift in Sources */,
+				01C1FB6E28C4D0C500951C75 /* HomeView.swift in Sources */,
 				01C1FB6C28C4D0C500951C75 /* BLANKApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
