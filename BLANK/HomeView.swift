@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView:  View {
+    var bg_colour = UIColor(red: 0.05, green: 0.43, blue: 0.81, alpha: 1.0)
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -33,6 +35,7 @@ struct HomeView:  View {
                     .frame(height: 350)
             }
             .padding()
+            .background(.indigo)
         }
     }
 }
