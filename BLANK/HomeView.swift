@@ -27,7 +27,18 @@ struct HomeView:  View {
                 }
                 Spacer()
                     .frame(height: 180)
-                Text("Let's BLANK it")
+                
+                Group {
+                    Text("Let's ")
+                        .fontWeight(.bold)
+                    + Text("BLANK ")
+                        .foregroundColor(Color(red: 0.647, green: 0.643, blue: 0.631, opacity: 0.7))
+                        .fontWeight(.semibold)
+                    + Text("it")
+                        .fontWeight(.bold)
+                }
+                .font(.system(size: 40))
+
                 Spacer()
                     .frame(height: 120)
                 Text("Buttons go here")
@@ -35,7 +46,7 @@ struct HomeView:  View {
                     .frame(height: 350)
             }
             .padding()
-            .background(.indigo)
+            .background(Color(red: 0.902, green: 0.925, blue: 1, opacity: 0.8))
         }
     }
 }
