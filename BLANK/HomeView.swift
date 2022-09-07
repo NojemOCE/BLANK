@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct HomeView:  View {
-    var bg_colour = UIColor(red: 0.05, green: 0.43, blue: 0.81, alpha: 1.0)
     
     var body: some View {
         NavigationView {
@@ -20,19 +19,19 @@ struct HomeView:  View {
                     }, label: {
                         Image(systemName: "person")
                             .resizable()
-                            .frame(width: 30, height:30, alignment: .center)
-                            .foregroundColor(Color(red: 0.647, green: 0.643, blue: 0.631, opacity: 0.7))
+                            .frame(width: 30, height: 30, alignment: .center)
+                            .foregroundColor(Color("SecondaryGrey"))
                     })
                     .padding()
                 }
                 Spacer()
-                    .frame(height: 200)
+                    .frame(height: 175)
                 
                 Group {
                     Text("Let's ")
                         .fontWeight(.bold)
                     + Text("BLANK ")
-                        .foregroundColor(Color(red: 0.647, green: 0.643, blue: 0.631, opacity: 0.7))
+                        .foregroundColor(Color("SecondaryGrey"))
                         .fontWeight(.semibold)
                     + Text("it")
                         .fontWeight(.bold)
@@ -51,10 +50,10 @@ struct HomeView:  View {
                     HomeButton(buttonText: "Task")
                 }
                 Spacer()
-                    .frame(height: 350)
+                    .frame(height: 300)
             }
             .padding()
-            .background(Color(red: 0.902, green: 0.925, blue: 1, opacity: 0.8))
+            .background(Color("BGColour"))
         }
     }
 }

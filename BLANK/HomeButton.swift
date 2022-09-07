@@ -9,12 +9,13 @@ import SwiftUI
 
 struct HomeButton: View {
     var buttonText = "My Button"
+    var selected = false
     
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 10)
-                .frame(width: 135, height: 65)
-            .foregroundColor(.gray)
+                .frame(width: 135, height: 62)
+                .foregroundColor(selected ? Color("MenuSelected") : Color("MenuDefault"))
             Text(buttonText)
                 .bold()
                 .font(.system(size: 25))

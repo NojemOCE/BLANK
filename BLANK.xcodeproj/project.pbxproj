@@ -70,9 +70,9 @@
 				01C1FB6D28C4D0C500951C75 /* HomeView.swift */,
 				01C1FB9D28C4FF6500951C75 /* HistoryView.swift */,
 				01C1FB9B28C4FE4600951C75 /* ContentView.swift */,
+				01C1FBA828C8FA0A00951C75 /* HomeButton.swift */,
 				01C1FB6F28C4D0C500951C75 /* Assets.xcassets */,
 				01C1FB7128C4D0C500951C75 /* Preview Content */,
-				01C1FBA828C8FA0A00951C75 /* HomeButton.swift */,
 			);
 			path = BLANK;
 			sourceTree = "<group>";
