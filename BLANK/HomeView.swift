@@ -26,7 +26,7 @@ struct HomeView:  View {
                     .padding()
                 }
                 Spacer()
-                    .frame(height: 180)
+                    .frame(height: 200)
                 
                 Group {
                     Text("Let's ")
@@ -40,8 +40,16 @@ struct HomeView:  View {
                 .font(.system(size: 38))
 
                 Spacer()
-                    .frame(height: 120)
-                Text("Buttons go here")
+                    .frame(height: 100)
+                HStack (spacing: 16) {
+                    HomeButton(buttonText: "Kick")
+                    HomeButton(buttonText: "Book")
+                }
+                Spacer(minLength: 12)
+                HStack (spacing: 16) {
+                    HomeButton(buttonText: "Block")
+                    HomeButton(buttonText: "Task")
+                }
                 Spacer()
                     .frame(height: 350)
             }
