@@ -22,20 +22,19 @@ struct ContentView: View {
         VStack() {
             ZStack {
                 switch selectedIndex {
-                case 0:
-                    HomeView()
                 case 1:
                     HistoryView()
                 case 2:
                     CalendarView()
                 case 3:
                     FriendView()
-                default:
+                case 4:
                     TasksView()
+                default:
+                    HomeView()
                 }
             }
             
-            Divider()
             HStack {
                 ForEach(0..<5, id: \.self) { number in
                     Spacer()

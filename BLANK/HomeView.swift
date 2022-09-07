@@ -21,7 +21,7 @@ struct HomeView:  View {
                         Image(systemName: "person")
                             .resizable()
                             .frame(width: 30, height:30, alignment: .center)
-                            .foregroundColor(Color(.secondaryLabel))
+                            .foregroundColor(Color(red: 0.647, green: 0.643, blue: 0.631, opacity: 0.7))
                     })
                     .padding()
                 }
@@ -37,7 +37,7 @@ struct HomeView:  View {
                     + Text("it")
                         .fontWeight(.bold)
                 }
-                .font(.system(size: 40))
+                .font(.system(size: 38))
 
                 Spacer()
                     .frame(height: 120)
