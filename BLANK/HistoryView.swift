@@ -11,9 +11,16 @@ struct HistoryView:  View {
     var body: some View {
         NavigationView {
             ZStack {
+                Color("BGColour").edgesIgnoringSafeArea(.all)
                 Text("This is where past BLANKs go")
             }
             .navigationTitle("History")
         }
+    }
+}
+
+struct HistoryView_Previews: PreviewProvider {
+    static var previews: some View {
+        HistoryView()
     }
 }

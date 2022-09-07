@@ -21,6 +21,7 @@ struct HomeButton: View {
                 .font(.system(size: 25))
         }
     }
+    
 }
 
 struct HomeButton_Previews: PreviewProvider {

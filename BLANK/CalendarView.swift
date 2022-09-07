@@ -11,6 +11,7 @@ struct CalendarView:  View {
     var body: some View {
         NavigationView {
             ZStack {
+                Color("BGColour").edgesIgnoringSafeArea(.all)
                 Text("This is where the calendar goes")
             }
             .navigationTitle("Calendar")

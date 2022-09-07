@@ -11,6 +11,7 @@ struct FriendView:  View {
     var body: some View {
         NavigationView {
             ZStack {
+                Color("BGColour").edgesIgnoringSafeArea(.all)
                 Text("These are where all your friends are listed")
             }
             .navigationTitle("Friends")

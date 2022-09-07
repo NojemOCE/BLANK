@@ -42,9 +42,7 @@ struct ContentView: View {
                         self.selectedIndex = number
                     }, label: {
                         Image(systemName: icons[number])
-                            .font(.system(size: 25,
-                                          weight: .regular,
-                                          design: .default))
+                            .font(.system(size: 25))
                             .foregroundColor(selectedIndex == number ? Color(.label) : Color(UIColor.lightGray))
                             .frame(width: 30, height: 30)
                     })
