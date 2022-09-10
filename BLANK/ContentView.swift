@@ -36,7 +36,7 @@ struct ContentView: View {
             }
             
             HStack {
-                ForEach(0..<5, id: \.self) { number in
+                ForEach(0..<icons.count, id: \.self) { number in
                     Spacer()
                     Button(action: {
                         self.selectedIndex = number
