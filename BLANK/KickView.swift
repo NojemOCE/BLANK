@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct KickView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var name: String = "Task Name"
     
     var body: some View {
@@ -22,12 +23,14 @@ struct KickView: View {
                     Spacer()
                     
                     Button(action: {
-                        // Display profile
+                        self.presentationMode.wrappedValue.dismiss()
+                        print("Button pressed")
                     }, label: {
-                        Image(systemName: "person")
+                        Image(systemName: "xmark")
                             .resizable()
-                            .frame(width: 30, height: 30, alignment: .center)
+                            .frame(width: 20, height: 20, alignment: .center)
                             .foregroundColor(Color("SecondaryGrey"))
+                            .padding(.trailing, 5)
                     })
                     .padding()
                 }
@@ -75,6 +78,8 @@ struct KickView: View {
                     .frame(height: 600)
             }
         }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
     }
 }
 

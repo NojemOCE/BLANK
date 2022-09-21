@@ -48,7 +48,7 @@ struct HomeView:  View {
                 HStack (spacing: 16) {
                     ZStack {
                         NavigationLink("",
-                           destination: Text("Need to implement this kick view"),
+                           destination: KickView(),
                            isActive: $shouldShowKick)
                         Button(action: {
                             shouldShowKick.toggle()
